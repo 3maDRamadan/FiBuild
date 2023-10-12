@@ -1,0 +1,36 @@
+.call {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100000;
+  background-color: var(--sec-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  color: white;
+  transition: var(--tran);
+  animation: up-and-down-call 2s linear infinite;
+}
+
+.call:hover {
+  border-color: var(--sec-color);
+  background-color: white;
+  color: var(--sec-color);
+}
+
+@keyframes up-and-down-call {
+
+  0%,
+  100% {
+    bottom: 50px;
+    border-color: white;
+  }
+
+  50% {
+    bottom: 55px;
+    border-color: var(--main-color);
+  }
+}

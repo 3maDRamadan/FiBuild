@@ -1,0 +1,39 @@
+.about {
+  text-align: center;
+
+}
+
+.about-main {
+  width: 90%;
+  background-color: var(--dark-color);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.about-main h3 {
+  color: var(--sec-color);
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.about-main p {
+  font-size: 22px;
+  color: white;
+}
+
+.about-main img {
+  margin-right: 15px;
+  height: 300px;
+  width: 300px;
+}
+@media (max-width:670px) {
+  .about-main article{
+    flex-direction: column;
+    
+  }
+  .about-main img {
+    height: 150px;
+    width: 150px;
+  }
+}

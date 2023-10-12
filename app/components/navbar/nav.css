@@ -1,0 +1,129 @@
+.container nav {
+  padding: 20px;
+  box-shadow: 0 0 10px #ddd;
+  display: flex;
+}
+
+.container nav img {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+}
+
+.container nav ul {
+  display: flex;
+  justify-content: space-around;
+  z-index: 10000000;
+}
+
+.container nav ul li {
+  transition: var(--tran);
+  padding: 5px 10px;
+  /* color: white; */
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container nav ul .active,
+.container nav ul li:hover {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 3px;
+}
+
+.container .nav-icon {
+  position: relative;
+  top: 2px;
+  right: 3px;
+}
+
+.container .sidebar {
+  width: 20%;
+  background-color: #216daa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000000;
+  position: absolute;
+  transition: var(--tran);
+  padding: 15px 0;
+  left: 50px;
+  display: none;
+}
+
+
+
+.container .sidebar ul li,
+.side-mobile ul li {
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.container .sidebar ul li:hover,
+.side-mobile ul li:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+.toogle {
+  display: none;
+}
+
+.toogle .list-icon {
+  color: var(--main-color);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/*Media */
+@media (max-width:830px) {
+  .container nav ul {
+    display: none;
+  }
+
+  .toogle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+  }
+}
+
+/* side-mobile */
+.navbar-close-icon {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  text-align: right;
+  width: 100%;
+  transition: .3s;
+
+}
+
+.navbar-close-icon .close-icon {
+  cursor: pointer;
+}
+
+.navbar-close-icon .close-icon:hover {
+  color: red;
+}
+
+.side-mobile {
+  position: absolute;
+  top: 0;
+  background-color:  #216daa;
+  width: 100%;
+  height: max-content;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: none;
+}
+
+.side-mobile ul li {
+  margin-bottom: 12px;
+}

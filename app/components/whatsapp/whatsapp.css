@@ -1,0 +1,26 @@
+.what {
+  position: fixed;
+  bottom: 40%;
+  background: #2aac3d;
+  width: 65px;
+  height: 65px;
+  border-end-end-radius: 30%;
+  cursor: pointer;
+  z-index: 10000;
+  transition: var(--tran);
+}
+
+.what .what-icon {
+  color: white;
+  font-size: 38px;
+}
+
+.what:hover .what-icon {
+  color: #2aac3d;
+
+}
+
+.what:hover {
+  background-color: white;
+  border: 5px solid #2aac3d;
+}
