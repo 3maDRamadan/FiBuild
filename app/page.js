@@ -1,6 +1,5 @@
 import About from "./components/about/About";
 import Land from "./components/land/Land";
-import Map from "./components/map/Map";
 import Service from "./components/services/Service";
 
 export const metadata = {
@@ -15,7 +14,6 @@ export default function Home() {
       <Land />
       <About />
       <Service />
-      <Map />
     </div>
   );
 }
